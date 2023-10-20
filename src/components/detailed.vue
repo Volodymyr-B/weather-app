@@ -113,9 +113,12 @@ defineProps<{
   }
 }
 
-.card:hover {
-  transform: scale(1.05);
+@media (min-width: 800px) {
+  .card:hover {
+    transform: scale(1.05);
+  }
 }
+
 .week_list {
   flex: 1;
   background-color: #212730;
@@ -138,9 +141,13 @@ defineProps<{
   border-radius: 10px;
   transition: all 0.3s ease;
 }
-.week_card:hover {
-  transform: scale(1.1);
+
+@media (min-width: 800px) {
+  .week_card:hover {
+    transform: scale(1.1);
+  }
 }
+
 .week_container {
   margin: 0 10px;
   padding: 16px;

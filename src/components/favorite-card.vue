@@ -88,8 +88,10 @@ onMounted(fetchWeather);
   transition: all 0.5s ease;
 }
 
-.card:hover {
-  transform: scale(1.02);
+@media (min-width: 800px) {
+  .card:hover {
+    transform: scale(1.02);
+  }
 }
 .temp {
   font-size: 68px;
