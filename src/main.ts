@@ -1,0 +1,16 @@
+import { createApp } from "vue";
+import App from "@/App.vue";
+import router from "@/router";
+import Toast from "vue-toastification";
+import "vue-toastification/dist/index.css";
+import "@/assets/main.css";
+
+const options = {
+  timeout: 2000,
+};
+
+const app = createApp(App);
+
+app.use(router);
+app.use(Toast, options);
+app.mount("#app");
